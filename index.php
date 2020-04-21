@@ -53,7 +53,7 @@
               <div class="col-xs-12">
               <div class="col-md-12">
           <div class="well text-center">
-            <form method="post" action="rev-show" role="form">
+            <form method="post" action="rev-show?id=<?php echo $id;?>" role="form">
             	<div class="col-lg-6">
               		<div class="form-group">
 		                <label>Nomor Rekam Medik</label>

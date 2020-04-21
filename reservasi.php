@@ -47,7 +47,7 @@
                 if($cek > 0){
                   $_SESSION['id_catatan_medik'] = $id_catatan_medik;
                   $_SESSION['status'] = "login";
-                echo "<script>alert('Verifikasi Berhasil!!!');document.location='rev-add?rm=$id_catatan_medik'</script>";
+                header("location:rev-add?id=$id_catatan_medik");
                 }else{
                 echo "<script>alert('Verifikasi Gagal!!!');document.location='index'</script>";
                   }

@@ -28,7 +28,7 @@
             <?php
               session_start();
               include '../koneksi.php';
-              $id_catatan_medik = $_GET['rm'];
+              $id_catatan_medik = $_GET['id'];
               $data = mysqli_query($koneksi,
                   "SELECT * FROM mr_pasien WHERE id_catatan_medik=$id_catatan_medik;");
               while($d = mysqli_fetch_array($data)){
